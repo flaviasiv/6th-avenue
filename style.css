@@ -63,7 +63,8 @@ header {
     margin: auto;
     right: 0;
     margin-right: 100;
-    align-items: center;    
+    align-items: center;  
+    background-color:#001D47;  
 }
 .menu-linksbtn ul{
     list-style: none;
@@ -132,7 +133,8 @@ header {
     flex-direction:column;
     justify-content:space-between;
     width:15px;
-    height:15px
+    height:15px;
+    background-color: #001D47;
 }
     
 .btn-toggle .bar {
@@ -144,14 +146,20 @@ header {
     
 @media only screen and (max-width: 768px) {
     .btn-toggle {
-    display:flex
+    display:flex;
+    margin-top: 35px;
     }
     
     .menu-links{
     display:none;
+    flex-direction: column;
     align-items:center;
-    width:100%;
-    height:200px
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom-right-radius: 32px;
+    border-bottom-left-radius: 32px;
+    height:270px
     }
     .menu-links ul{
         display: block;
@@ -159,8 +167,19 @@ header {
     .menu-links a {
     padding:.25rem 2rem
     }
+    .menusocial li:first-child{
+        padding: 5px 8px;
+        gap: 0px;
+        width: 160px;
+        margin-bottom: 10px;
+    }
+    .menusocial a:first-child{
+        font-size: 14px;
+    }
     
     .menu-links.active{
+        margin: auto;
+        margin-top: 70px;
     display:flex
     }
     .menusocial.active {
@@ -173,8 +192,6 @@ header {
     #home {
     display:flex;
     flex-direction:column;
-    margin-right: 0;
-    padding-top: 12px;
     max-width: 1200px;
     text-align: right;
     align-items: end;
@@ -274,6 +291,41 @@ header {
 #missioncard3{
     width: 189px;
 }
+@media screen and (max-width: 770px) {
+.mission {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mission h3{
+    width: 252px;
+    font-size: 30px;
+}
+.mission p{
+    width: 344px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+.missiongrid{
+display: flex;
+flex-direction: column;
+padding-bottom: 0px;
+}
+.missioncard{
+    padding-bottom: 34px;
+}
+.missioncard:last-child{
+    padding-bottom: 0;
+}
+.missioncard img{
+    width: 223px;
+    height: 205px;
+}
+.missioncard h5{
+    margin-top: 19px;
+    font-size: 16px;
+}
+}
 
 .request{
     position: relative;
@@ -283,7 +335,7 @@ header {
     width: 100%;
     max-width: 2990px;
     margin: auto;
-    height: 300px;
+    height: 280px;
     background-image: url(./assets/Vector.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -308,6 +360,12 @@ header {
     color: var(--6th-blue-primary, #002A68);
     font-size: 20px;
     font-weight: 600;
+}
+@media screen and (max-width: 770px) {
+    .request{
+        height: 120px;
+    }
+
 }
 
 .servicescontainer{
@@ -396,6 +454,50 @@ header {
 #servicecard3 h2{
     width: 199px;
 }
+@media screen and (max-width: 770px) {
+.servicestitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.servicestitle h2{
+    width: 252px;
+    font-size: 30px;
+}
+.servicestitle p{
+    width: 344px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+.servicesgrid{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+}
+.servicesgrid > .servicescard {
+    flex: 50%; 
+}
+.servicescard{
+    max-width: 163px;
+    height: fit-content;
+}
+.servicescard:last-child{
+    padding-bottom: 0;
+}
+.servicescard img{
+    width: 100%;
+    height: fit-content;
+    max-width: fit-content;
+}
+.servicescard h2{
+    margin-top: 19px;
+    font-size: 15px;
+}
+#servicecard4 h2, #servicecard2 h2{
+    width: 109px;
+}
+}
 .diferences{
     position: relative;
     display: flex;
@@ -452,6 +554,28 @@ header {
 #diferencecard3 h2{
     padding: 5px;
     max-width: 236px;
+}
+@media screen and (max-width: 770px) {
+    .diferencesgrid{
+        top: 30%;
+        max-width: 340px;
+        padding-left: 0px;
+    }
+    .diferencecard svg{
+        width: 70.994px;
+        height: 60.98px;
+    }
+    .diferencecard h2{
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 90%;
+        width: 90px;
+    }
+    #diferencecard3 h2{
+        padding: 0px;
+        max-width: 136px;
+    }
 }
 .testimonies{
     position: relative;
@@ -532,6 +656,70 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 18.2px */
+}
+@media screen and (max-width: 770px) {
+    .testimonies{
+        top: -240;
+    }
+}
+@media screen and (max-width: 770px) {
+.testemonies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+}
+.testemoniestitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testemoniestitle h3{
+    width: 252px;
+    font-size: 30px;
+}
+.testemoniestitle p{
+    width: 344px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+.testemoniesgrid{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width:340px;
+    padding-bottom: 60px;
+}
+.testemonycard{
+    width: 343px;
+    height: 208px;
+    flex-shrink: 0;
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 15px 8px;
+    margin-bottom: 8px;
+}
+.testemonycard svg{
+    width: 133px;
+    height: 20px;
+    align-items: center;
+}
+.testemonycard:last-child{
+    padding-bottom: 0;
+}
+.testemonycard h2{
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+.testemonycard h6{
+    padding-bottom: 8px;
+    font-size: 14px;
+}
+.testemonycard p{
+    padding-top: 8px;
+    font-size: 15px;
+}
 }
 .vetor{
     position: relative;
@@ -634,6 +822,48 @@ header {
     margin-top: 70px;
     width: 163px;
 }
+@media screen and (max-width: 770px) {
+.preference {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.preference h3{
+    width: 252px;
+    font-size: 30px;
+}
+.preference p{
+    width: 344px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+.preferencegrid{
+display: flex;
+flex-direction: column;
+padding-bottom: 0px;
+}
+.preferencecard{
+    padding-bottom: 34px;
+}
+.preferencecard:last-child{
+    padding-bottom: 0;
+}
+.preferencecard img{
+    max-width: 223px;
+}
+.preferencecard h5{
+    font-size: 16px;
+}
+#preferencecard1 h5{
+    margin-top: 20px;
+}
+#preferencecard2 h5{
+    margin-top: 20px;
+}
+#preferencecard3 h5 {
+    margin-top: 20px;
+}
+}
 .license{
     position: relative;
     top: -150px;
@@ -646,7 +876,16 @@ header {
     align-items: center;
     text-align: center;
 }
-
+@media screen and (max-width: 770px) {
+    .license{
+        top: -120px;
+        left: 0;
+        margin-bottom: 30px;
+    }
+    .license img{
+        max-width: 100px;
+    }
+}
 .contactcontainer{
     position: relative;
     display: flex;
@@ -716,7 +955,7 @@ form {
     border: 4px solid #fff;
     border-radius: 16px;
     padding: 8px;
-    background-color: transparent;
+    background-color: #001e4718;
 }
 #form input{
     height:  46px;    
@@ -750,7 +989,77 @@ form {
     display: flex;
     gap: 24px;
 }
-
+@media screen and (max-width: 770px) {
+    .contact{
+        position: relative;
+        display: flex;
+        top: -250;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 540px;
+        margin: auto; 
+        align-items: center;
+        text-align: center;
+    }
+    .contacttitle {
+        margin-bottom: 20px;
+    }
+    .contacttitle h2{
+        font-size: 20px;
+        font-weight: 600; 
+        padding-bottom: 10px;
+    }
+    .contacttitle svg {
+        max-width: 100px;
+    }
+    .contactinfo{
+        display: flex;
+        margin-top: 0px;
+    }
+    .contactinfo img{
+        width: 150;
+        padding-left: 15px;
+    }
+        
+    .form{
+        position: absolute;
+        padding-right: 15px;
+        display: block;
+        right: 0;
+        width: 280px;
+        margin: auto;
+        height: 300px;
+        background-color: transparent;
+    }
+    form {
+        gap: 8px;
+        border-radius: 20px;
+    }
+    #form input, textarea{
+        width: 100%;
+        border: 3px solid #fff;
+        border-radius: 16px;
+        padding: 8px;
+        background-color: #001e4718;
+    }
+    #form input{
+        height:  36px;    
+    }
+    #form textarea{
+        height: 100px;
+    }
+    #form button{
+        transform: translateX(70%);
+        margin-top: 2px;
+        width: 109px;
+        padding: 8px;
+        font-size: 10px;
+    }
+    .formgroup1, .formgroup2{
+        display: flex;
+        gap: 8px;
+    }
+}
 
 footer{
     position: relative;
@@ -793,6 +1102,9 @@ footer{
     justify-content: space-between;
     width: 116px;
     height: 63px;
+}
+.footermenu3{
+    display: none;
 }
 .footerimglogo img{
     display: block;
@@ -848,4 +1160,91 @@ footer{
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;
+}
+@media screen and (max-width: 770px) {
+    footer{
+        position: relative;
+        width: 100%;
+        max-width: 2990px;
+        margin: auto;
+        height: 100px;
+        top: -620;
+        background-color: #FFF;
+    }
+    .footergrid{
+        display: flex;
+        width: 100%;
+        max-width: 1240px;
+        margin: auto;
+        justify-content: space-between;
+    }
+    .footermenu3 ul li {
+        list-style: none;
+    }
+    .footermenu3 ul li a{
+        text-decoration: none;
+        color: var(--6th-blue-primary, #002A68);
+        font-family: 'Neue Haas Grotesk Display Pro';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%;
+    }
+    .footermenu1 ul{
+        display: none;
+    }
+    .footermenu2 ul{
+        display: none;
+    }
+    .footermenu3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 106px;
+        height: 203px;
+        text-align: center;
+    }
+    .footerimglogo img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -25px;
+        width: 100%;
+        max-width: 218.45px;
+        max-height: 188px;
+    }
+    .adress p{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .footersocials{
+        margin-left: 15px;
+        top: 0;
+    }
+    .footersocials p{
+        margin-left: 10px;
+        color: var(--6th-blue-primary, #002A68);
+        font-family: 'Neue Haas Grotesk Display Pro';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 160%; /* 25.6px */
+    }
+    .footersocials ul {
+        list-style: none;
+        display: flex;
+        text-align: center;
+        gap: 5px;
+        padding-top: 8px;
+    }
+    .footersocials ul a{
+        text-decoration: none;
+    }
+    .rights{
+        height: 70px;
+        padding: 30px 0;
+    }
+    .rights p{
+        font-size: 12.4px;
+    }
 }
