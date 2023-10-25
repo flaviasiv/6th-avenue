@@ -505,8 +505,7 @@ padding-bottom: 0px;
     width: 100%;
     max-width: 2990px;
     margin: auto;
-    background-color: #F3F3F3;
-    
+    background-image: linear-gradient(to bottom, #F3F3F3, #F3F3F3, #F3F3F3, #F3F3F3, #F3F3F3, #F3F3F3, #ffbe50, #ffbe50);  
 }
 .diferences img{
     z-index: 1;
@@ -580,8 +579,7 @@ padding-bottom: 0px;
 .testimonies{
     position: relative;
     background-color: #FFBE50;
-    padding-top: 400px;
-    top: -280;
+    padding-top: 80px;
 }
 .testemoniestitle{
     width: 100%;
@@ -658,16 +656,13 @@ padding-bottom: 0px;
     line-height: 130%; /* 18.2px */
 }
 @media screen and (max-width: 770px) {
-    .testimonies{
-        top: -240;
-    }
 }
 @media screen and (max-width: 770px) {
 .testemonies {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 0;
+    height: 500px;
 }
 .testemoniestitle{
     display: flex;
@@ -723,7 +718,6 @@ padding-bottom: 0px;
 }
 .vetor{
     position: relative;
-    top: -280;
     width: 100%;
     max-width: 2990px;
     margin: auto;
@@ -735,7 +729,7 @@ padding-bottom: 0px;
 }
 .preferencecontainer{
     position: relative;
-    top: -200;
+    top: 10;
     background-color: #fff;
     width: 100%;
     max-width: 2990px;
@@ -866,21 +860,28 @@ padding-bottom: 0px;
 }
 .license{
     position: relative;
-    top: -150px;
-    left: -39;
+    left: 50%;
+    transform: translateX(-60%);
     background-color: #fff;
     width: 100%;
     max-width: 2990px;
     margin: auto;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.license img{
+    position: absolute;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 @media screen and (max-width: 770px) {
     .license{
-        top: -120px;
-        left: 0;
-        margin-bottom: 30px;
+        left: 50%;
+        transform: translateX(-60%);
+        height: 80px;
     }
     .license img{
         max-width: 100px;
@@ -889,26 +890,29 @@ padding-bottom: 0px;
 .contactcontainer{
     position: relative;
     display: flex;
-    align-items: center;
-    text-align: center;
-    top: -150px;
+    flex-direction: column;
     width: 100%;
     max-width: 2990px;
     margin: auto;
-    height: 100%;
-    background: #fff url(./assets/Union2.png) no-repeat;
-    background-size: 100%;
+    margin-top: 100px;
+}
+.contactcontainer img{
+    z-index: 1;
+    width: 100%;
+    max-width: 2990px;
+    margin: auto;
 }
 .contact{
-    position: relative;
-    display: flex;
-    top: -90;
-    justify-content: space-between;
+    position: absolute;
+    z-index: 5;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    max-width: 1240px;
-    margin: auto; 
-    align-items: center;
-    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 90px;
 }
 .contacttitle {
     display: flex;
@@ -927,15 +931,15 @@ padding-bottom: 0px;
     line-height: 100%;     
     padding-bottom: 30px;
 }
-.contactinfo{
-    display: flex;
-    margin-top: 280px;
+.contactinfo img{
+    display: block;
+    width: 550px;
+    margin-top: 200px;
 }
 .form{
-    position: absolute;
     display: block;
-    right: 0;
     width: 660px;
+    right: 0;
     margin: auto;
     height: 300px;
     background-color: transparent;
@@ -944,7 +948,6 @@ form {
     width: 100%;
     list-style: none;
     display: flex;
-    top: -50px;
     flex-direction: column;
     gap: 17px;
     background-color: transparent;
@@ -990,74 +993,117 @@ form {
     gap: 24px;
 }
 @media screen and (max-width: 770px) {
-    .contact{
+    .contactcontainer{
         position: relative;
         display: flex;
-        top: -250;
-        justify-content: space-between;
         width: 100%;
-        max-width: 540px;
-        margin: auto; 
+        max-width: 2990px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .contactcontainer img{
+        z-index: 1;
+        width: 100%;
+        max-width: 2990px;
+        margin: auto;
+    }
+    .contact{
+        position: absolute;
+        z-index: 5;
+        gap: 0px;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        text-align: center;
     }
     .contacttitle {
-        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
     }
     .contacttitle h2{
+        color: var(--6th-high, #FFF);
+        font-family: 'Urbanist', sans-serif;
         font-size: 20px;
-        font-weight: 600; 
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;     
         padding-bottom: 10px;
     }
-    .contacttitle svg {
+    .contacttitle svg{
         max-width: 100px;
     }
     .contactinfo{
-        display: flex;
-        margin-top: 0px;
+        margin: auto
     }
     .contactinfo img{
-        width: 150;
-        padding-left: 15px;
-    }
-        
-    .form{
-        position: absolute;
-        padding-right: 15px;
         display: block;
-        right: 0;
-        width: 280px;
-        margin: auto;
-        height: 300px;
+        width: 100px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    .form{
+        display: block;
+        width: 260px;
+        margin-right: auto;
+        height: 200px;
         background-color: transparent;
     }
     form {
-        gap: 8px;
-        border-radius: 20px;
+        width:200px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        background-color: transparent;
     }
     #form input, textarea{
         width: 100%;
-        border: 3px solid #fff;
+        list-style: none;
+        border: 4px solid #fff;
         border-radius: 16px;
         padding: 8px;
         background-color: #001e4718;
     }
-    #form input{
-        height:  36px;    
-    }
     #form textarea{
         height: 100px;
     }
+    #form input{
+        height:  36px;    
+    }
     #form button{
-        transform: translateX(70%);
-        margin-top: 2px;
-        width: 109px;
+        left: 50%;
+        transform: translateX(90%);
+        margin-top: 5px;
+        width: 129px;
+        border-radius: 5px;
+        list-style: none;
+        border: 2px solid #fff;
+        color: #002A68;
+        border-radius: 72px;
         padding: 8px;
-        font-size: 10px;
+        background-color: #FFBE50;
+        cursor: pointer;
+        align-items: center;
+        font-family: 'Outfit', sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%; 
+    }
+    #form button:hover{
+        background-color: #dba444;
+        border: 2px solid #FFBE50;
+        transition: 0.6s;
     }
     .formgroup1, .formgroup2{
         display: flex;
-        gap: 8px;
+        gap: 7px;
     }
 }
 
@@ -1067,7 +1113,6 @@ footer{
     max-width: 2990px;
     margin: auto;
     height: 100px;
-    top: -120;
     background-color: #FFF;
 }
 .footergrid{
@@ -1160,7 +1205,7 @@ footer{
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;
-}
+}/*
 @media screen and (max-width: 770px) {
     footer{
         position: relative;
@@ -1168,7 +1213,6 @@ footer{
         max-width: 2990px;
         margin: auto;
         height: 100px;
-        top: -620;
         background-color: #FFF;
     }
     .footergrid{
@@ -1228,7 +1272,7 @@ footer{
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
-        line-height: 160%; /* 25.6px */
+        line-height: 160%; 
     }
     .footersocials ul {
         list-style: none;
