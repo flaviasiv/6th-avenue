@@ -180,13 +180,17 @@ header {
     margin-right: 0;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:270px
+    height:300px
     }
     .menu-links ul{
         display: block;
     }
     .menu-links a {
     padding:.25rem 2rem
+    }
+    .menu-linksbtn{
+        display: flex;
+        margin-left: 20;
     }
     .menusocial li:first-child{
         padding: 5px 8px;
@@ -207,7 +211,7 @@ header {
         display:flex
     }
     .navbar {
-    padding:2px 48px
+    padding:0px 0px
     }
     
     #home {
@@ -288,28 +292,28 @@ header {
         max-width: 390px;
     }
     .posterimglogo{
-        max-width: 250px;
+        max-width: 215px;
         margin: auto;
-        top: 5%;
-        left: 20%;
+        top: 8%;
+        left: 25%;
         justify-content: center;
         align-items: center;
     }
     .postercontainer h3{
         width: 353px;
         font-size: 32.625px;
-        top: 44%;
+        top: 42%;
         left: 13%;
     }
     .postercontainer h3 span{
         text-underline-offset: 5px;
     }
     .postercontainer p{
-        top:69%;
+        top:67%;
         left: 13%;
-        width: 221px;
+        width: 300px;
         padding-top: 15px;
-        font-size: 20px;
+        font-size: 19px;
         font-weight: 400;
         line-height: 130%;
     }
