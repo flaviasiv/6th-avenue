@@ -1230,6 +1230,7 @@ footer{
     margin: auto;
     height: 100px;
     background-color: #FFF;
+    font-family: 'Neue Haas Grotesk Display Pro';
 }
 .footergrid{
     display: flex;
