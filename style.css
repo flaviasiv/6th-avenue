@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Neue Haas Grotesk Display Pro';
-    src: url('NHAASGROTESKTXPRO-55RG.ttf') format('truetype');
+    src: url('./NEUEHAASDISPLAYBLACK.TTF') format('truetype');
     font-family: 'Calibri';
     src: url(./calibri-regular.ttf);
   }
@@ -281,15 +281,15 @@ header {
     .posterimglogo{
         max-width: 250px;
         margin: auto;
-        top: 10%;
+        top: 5%;
         left: 20%;
         justify-content: center;
         align-items: center;
     }
     .postercontainer h3{
         width: 353px;
-        font-size: 38.625px;
-        top: 45%;
+        font-size: 32.625px;
+        top: 44%;
         left: 13%;
     }
     .postercontainer h3 span{
@@ -901,6 +901,7 @@ padding-bottom: 0px;
     align-items: center;
     background-color: #fff;
     margin: auto;
+    max-width: 250px;
     border-radius: 20px
 }
 .preferencecard img{
@@ -972,11 +973,9 @@ padding-bottom: 0px;
 }
 .license{
     position: relative;
-    left: 50%;
-    transform: translateX(-60%);
     background-color: #fff;
     width: 100%;
-    max-width: 2990px;
+    max-width: 1440px;
     margin: auto;
     margin-top: 50px;
     justify-content: center;
@@ -988,6 +987,8 @@ padding-bottom: 0px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
 }
 @media screen and (max-width: 770px) {
     .license{
@@ -1079,27 +1080,26 @@ form {
 }
 #form button{
     left: 50%;
-    transform: translateX(130%);
+    transform: translateX(97%);
     margin-top: 10px;
     width: 189px;
     border-radius: 5px;
     list-style: none;
-    border: 2px solid #fff;
+    border: none;
     color: #002A68;
     border-radius: 72px;
     padding: 8px;
     background-color: #FFBE50;
     cursor: pointer;
+    display: flex;
     align-items: center;
+    justify-content: center;
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 100%; 
 }
 #form button:hover{
     background-color: #dba444;
-    border: 2px solid #FFBE50;
     transition: 0.6s;
 }
 .formgroup1, .formgroup2{
@@ -1227,9 +1227,14 @@ footer{
 .footergrid{
     display: flex;
     width: 100%;
-    max-width: 1240px;
+    max-width: 1440px;
     margin: auto;
     justify-content: space-between;
+}
+.footermenu1, .footermenu2{
+    display: flex;
+    justify-content: center;
+    width: 288px;
 }
 .footermenu1 ul li, .footermenu2 ul li {
     list-style: none;
@@ -1247,36 +1252,50 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 62px;
     height: 63px;
 }
 .footermenu2 ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 116px;
     height: 63px;
+}
+.footerimglogo{
+    display: flex;
+    justify-content: center;
+    width: 288px;
+    padding: 50 0 20 0; 
 }
 .footerimglogo img{
     display: block;
-    width: 100%;
     margin: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -50px;
-    max-width: 218.45px;
-    max-height: 188px;
+    margin-top: -100px;
+    width: 250px;
+}
+.adress{
+    display: flex;
+    justify-content: right;
+    width: 288px;
+    margin-left: 50px;
 }
 .adress p{
     text-align: center;
+    width: auto;
     color: var(--6th-blue-primary, #002A68);
     font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 16px;
     font-weight: 600;
     line-height: 120%; /* 25.6px */
 }
+.footersocials{
+    justify-content: right;
+    width: 288px;
+}
 .footersocials p{
-    margin-left: 15px;
+    text-align: right;
+    margin-right: 30px;
     color: var(--6th-blue-primary, #002A68);
     font-family: 'Neue Haas Grotesk Display Pro';
     font-size: 16px;
@@ -1285,6 +1304,7 @@ footer{
     line-height: 160%; /* 25.6px */
 }
 .footersocials ul {
+    justify-content: right;
     list-style: none;
     display: flex;
     text-align: center;
@@ -1321,6 +1341,7 @@ footer{
         margin: auto;
         height: 100px;
         background-color: #FFF;
+        margin: auto;
     }
     .footergrid{
         display: flex;
@@ -1353,19 +1374,30 @@ footer{
         height: auto;
         text-align: center;
     }
+    .adress{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
     .adress p{
-        font-size: 16px;
+        justify-content: center;
         margin-top: 0px;
-        
+        margin: auto;
     }
     .footerimglogo{
         display: flex;
         margin-left: 0;
+        margin-top: 0px;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        padding: 20 0 20 0; 
     }
     .footerimglogo img{
         margin-top: 0px;
         width: 100%;
         height: 100%;
+        width: 288px;
     }
     .footersocials{
         margin-left: 0px;
@@ -1377,8 +1409,12 @@ footer{
         height: auto;
         text-align: center;
     }
+    .footersocials{
+        justify-content: center;
+    }
     .footersocials p{
-        margin-left: 0px;
+        text-align: center;
+        margin: 0;
         color: var(--6th-blue-primary, #002A68);
         font-family: 'Neue Haas Grotesk Display Pro';
         font-size: 16px;
@@ -1393,7 +1429,7 @@ footer{
         justify-content: center;
         gap: 5px;
         padding-top: 8px;
-        margin-left: 15px;
+        margin-left: 19px;
     }
     .footersocials ul a{
         text-decoration: none;
