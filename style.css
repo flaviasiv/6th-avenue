@@ -46,7 +46,7 @@ header {
     justify-content: space-between;
     position: fixed;
     right: 0;
-    z-index: 999;
+    z-index: 99;
     padding:28px 0px;
     width: 100%;
     max-width: 1440px;
@@ -141,13 +141,26 @@ header {
     background-color:#fff;
     border-radius:20px
 }
-    
+.imglogo-m{
+    display: none;
+}
 @media only screen and (max-width: 768px) {
     .btn-toggle {
     display:flex;
     margin-top: 35px;
     }
-    
+    .imglogo-m{
+        position: absolute;
+        display: block;
+        z-index: 999;
+        left: 3rem;
+    }
+    .imglogo-m img{
+        width: 100%;
+        max-width: 100;
+        margin: auto;
+        padding: 10px;
+    }
     .menu-links{
     display:none;
     flex-direction: column;
@@ -1188,7 +1201,7 @@ form {
     }
     #form button{
         left: 50%;
-        transform: translateX(50%);
+        transform: translateX(100%);
         margin-top: 8px;
         width: 119px;
         font-size: 10px;
@@ -1241,15 +1254,13 @@ footer{
     width: 116px;
     height: 63px;
 }
-.footermenu3{
-    display: none;
-}
 .footerimglogo img{
     display: block;
+    width: 100%;
+    margin: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: -50px;
-    width: 100%;
     max-width: 218.45px;
     max-height: 188px;
 }
@@ -1299,9 +1310,6 @@ footer{
     font-weight: 500;
     line-height: 150%;
 }
-.footerimglogo2{
-    display: none;
-}
 @media screen and (max-width: 770px) {
     footer{
         position: relative;
@@ -1313,59 +1321,61 @@ footer{
     }
     .footergrid{
         display: flex;
+        flex-direction: column;
         width: 100%;
         max-width: 1240px;
         margin: auto;
         justify-content: space-between;
     }
-    .footermenu3 ul li {
+    .footermenu2{
+        margin-top: 20px;
+    }
+    .footermenu2 ul li {
         list-style: none;
     }
-    .footermenu3 ul li a{
+    .footermenu2 ul li a, .footermenu1 ul li a{
         text-decoration: none;
         color: var(--6th-blue-primary, #002A68);
         font-family: 'Neue Haas Grotesk Display Pro';
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: 160%;
     }
-    .footermenu1 ul{
-        display: none;
-    }
-    .footermenu2 ul{
-        display: none;
-    }
-    .footermenu3{
+    .footermenu2, .footermenu1{
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 106px;
-        height: 203px;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: auto;
         text-align: center;
     }
-    .footerimglogo {
-        display: none;
-    }
     .adress p{
-        font-size: 14px;
-        margin-top: 5px;
+        font-size: 16px;
+        margin-top: 0px;
         
     }
-    .footerimglogo2{
+    .footerimglogo{
         display: flex;
-        margin-left: 30;
+        margin-left: 0;
     }
-    .footerimglogo2 img{
-        margin-top: -25px;
-        width: 155px;
+    .footerimglogo img{
+        margin-top: 0px;
+        width: 100%;
+        height: 100%;
     }
     .footersocials{
-        margin-left: 15px;
-        top: 0;
+        margin-left: 0px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        text-align: center;
     }
     .footersocials p{
-        margin-left: 10px;
+        margin-left: 0px;
         color: var(--6th-blue-primary, #002A68);
         font-family: 'Neue Haas Grotesk Display Pro';
         font-size: 16px;
@@ -1377,8 +1387,10 @@ footer{
         list-style: none;
         display: flex;
         text-align: center;
+        justify-content: center;
         gap: 5px;
         padding-top: 8px;
+        margin-left: 15px;
     }
     .footersocials ul a{
         text-decoration: none;
