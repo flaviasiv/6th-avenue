@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Neue Haas Grotesk Display Pro';
     src: url('NEUEHAASDISPLAYBLACK.TTF') format('truetype');
-    src: url('NHAASGROTESKTXPRO65MD.eot');
-    src: url('NHAASGROTESKTXPRO65MD.eot?#iefix') format('embedded-opentype'),
+    src: url('NHAASGROTESKTXPRO65MD.eot?#iefix') format('embedded-opentype'); 
+    src:url('NHAASGROTESKTXPRO65MD.eot'),
          url('NHAASGROTESKTXPRO65MD.woff') format('woff'),
          url('NHAASGROTESKTXPRO65MD.svg#NeueHaasGroteskDisplayPro') format('svg');
     font-weight: normal;
