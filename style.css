@@ -11,7 +11,7 @@
     font-weight: normal;
     font-style: normal;
   }
-  @font-face {
+/*  @font-face {
     font-family: 'Urbanist';
     src: 
     local('Urbanist');
@@ -26,13 +26,21 @@
     font-family: 'Outfit';
     src: 
     local('Outfit');
+    src: url('Outfit-Black.ttf') format('truetype');
+    src: url('Outfit-Bold.ttf') format('truetype');
+    src: url('Outfit-ExtraBold.ttf') format('truetype');
+    src: url('Outfit-ExtraLight.ttf') format('truetype');
+    src: url('Outfit-Light.ttf') format('truetype');
+    src: url('Outfit-Medium.ttf') format('truetype');
+    src: url('Outfit-SemiBold.ttf') format('truetype');
+    src: url('Outfit-Thin.ttf') format('truetype');
     src: url('Outfit-Regular.ttf') format('truetype');
     src: url('Outfit[wght].ttf') format('truetype');
     src: url('Urbanist-Black.ttf') format('truetype');
     src: url('Outfit-Regular.otf') format('embedded-opentype'),
          url('Outfit-Regular.woff') format('woff'),
          url('Outfit-Regular.woff2') format('woff2');
-  }
+  } */
   @font-face {
     font-family: 'Calibri';
     src: url('calibri-regular.ttf') format('truetype');
