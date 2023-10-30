@@ -310,7 +310,8 @@ header {
     top: 30%;
     left: 50%;
 }
-.postercontainer h3 span{
+.postercontainer h3 span:first-child{
+    text-decoration:underline#ffbe50;
     text-underline-offset: 15px;
 }
 .postercontainer p{
@@ -347,7 +348,8 @@ header {
         width: 473px;
         font-size: 52.625px;
     }
-    .postercontainer h3 span{
+    .postercontainer h3 span:first-child{
+        text-decoration:underline#ffbe50;
         text-underline-offset: 10px;
     }
     .postercontainer p{
@@ -383,7 +385,8 @@ header {
         top: 42%;
         left: 13%;
     }
-    .postercontainer h3 span{
+    .postercontainer h3 span:first-child{
+        text-decoration:underline#ffbe50;
         text-underline-offset: 5px;
     }
     .postercontainer p{
@@ -530,44 +533,17 @@ padding-bottom: 0px;
 }
 }
 
-
-.missiongrid > .missioncard {
-  /* (oldVal - oldMin) * newRange / oldRange + newMin */
-  --value: min(var(--scroll), 30) * 50 / 30;
-  width: calc(50vw + 1vw * var(--value));
-  transform: translateY(calc(50% - 1% * var(--value)));
-}
-
-@media (width <= 1000px) {
-  .missiongrid .missioncard {
-    display: none;
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
   }
-
-  .top-section .left {
-    text-align: center;
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
   }
-
-  body {
-    font-size: 24px;
-  }
-
-  h1 {
-    font-size: 72px;
-  }
-
-  .imgs > .top-section-img {
-    width: 100vw;
-  }
-}
-
-:root {
-  --scroll: 0;
-}
-
-.missiongrid {
-  position: sticky;
-  top: 0;
-}
 
 
 .request{
