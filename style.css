@@ -1,11 +1,12 @@
 @font-face {
-    font-family: 'Neue Haas Grotesk Display Pro';
+    font-family: 'Neue';
     src: 
     local('Neue')
     url('NEUEHAASDISPLAYBLACK.TTF') format('truetype');
     src: url('NHAASGROTESKTXPRO65MD.eot?#iefix') format('embedded-opentype'); 
     src:url('NHAASGROTESKTXPRO65MD.eot'),
          url('NHAASGROTESKTXPRO65MD.woff') format('woff'),
+         url('NHAASGROTESKTXPRO65MD.woff2') format('woff2'),
          url('NHAASGROTESKTXPRO65MD.svg#NeueHaasGroteskDisplayPro') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -1249,7 +1250,7 @@ footer{
     margin: auto;
     height: 100px;
     background-color: #FFF;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Neue';
 }
 .footergrid{
     display: flex;
@@ -1269,7 +1270,7 @@ footer{
 .footermenu1 ul li a, .footermenu2 ul li a{
     text-decoration: none;
     color: var(--6th-blue-primary, #002A68);
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Neue';
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1311,7 +1312,7 @@ footer{
     text-align: center;
     width: auto;
     color: var(--6th-blue-primary, #002A68);
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Neue';
     font-size: 16px;
     font-weight: 600;
     line-height: 120%; /* 25.6px */
@@ -1324,7 +1325,7 @@ footer{
     text-align: right;
     margin-right: 30px;
     color: var(--6th-blue-primary, #002A68);
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Neue';
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1355,7 +1356,7 @@ footer{
 }
 .rights p{
     color: #002A68;
-    font-family: 'Urbanist', sans-serif;
+    font-family: 'Neue';
     font-size: 14.4px;
     font-weight: 500;
     line-height: 150%;
@@ -1387,7 +1388,7 @@ footer{
     .footermenu2 ul li a, .footermenu1 ul li a{
         text-decoration: none;
         color: var(--6th-blue-primary, #002A68);
-        font-family: 'Urbanist', sans-serif;
+        font-family: 'Neue';
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -1443,7 +1444,7 @@ footer{
         text-align: center;
         margin: 0;
         color: var(--6th-blue-primary, #002A68);
-        font-family: 'Urbanist', sans-serif;
+        font-family: 'Neue';
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
