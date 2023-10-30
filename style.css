@@ -12,6 +12,28 @@
     font-style: normal;
   }
   @font-face {
+    font-family: 'Urbanist';
+    src: 
+    local('Urbanist');
+    src: url('Urbanist[wght].ttf') format('truetype');
+    src: url('Urbanist-Regular.ttf') format('truetype');
+    src: url('Urbanist-Black.ttf') format('truetype');
+    src: url('Urbanist-Black.otf') format('embedded-opentype'),
+         url('Urbanist-Black.woff2') format('woff'),
+         url('Urbanist-Regular.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'Outfit';
+    src: 
+    local('Outfit');
+    src: url('Outfit-Regular.ttf') format('truetype');
+    src: url('Outfit[wght].ttf') format('truetype');
+    src: url('Urbanist-Black.ttf') format('truetype');
+    src: url('Outfit-Regular.otf') format('embedded-opentype'),
+         url('Outfit-Regular.woff') format('woff'),
+         url('Outfit-Regular.woff2') format('woff2');
+  }
+  @font-face {
     font-family: 'Calibri';
     src: url('calibri-regular.ttf') format('truetype');
   }
@@ -26,6 +48,7 @@ font-family: 'Urbanist', sans-serif;
 }
 
 body{
+    /*font-family: 'Urbanist', sans-serif;*/
 }
 html{
     scroll-behavior: smooth;
