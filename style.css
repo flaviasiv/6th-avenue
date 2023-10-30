@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'Neue';
     src: 
-    local('Neue')
-    url('NEUEHAASDISPLAYBLACK.TTF') format('truetype');
+    local('Neue');
+    src: url('NEUEHAASDISPLAYBLACK.TTF') format('truetype');
     src: url('NHAASGROTESKTXPRO65MD.eot?#iefix') format('embedded-opentype'); 
     src:url('NHAASGROTESKTXPRO65MD.eot'),
          url('NHAASGROTESKTXPRO65MD.woff') format('woff'),
