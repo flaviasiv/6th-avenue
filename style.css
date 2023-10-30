@@ -9,9 +9,10 @@
          url('NHAASGROTESKTXPRO65MD.svg#NeueHaasGroteskDisplayPro') format('svg');
     font-weight: normal;
     font-style: normal;
+  }
+  @font-face {
     font-family: 'Calibri';
     src: url('calibri-regular.ttf') format('truetype');
-
   }
 /*
 font-family: 'Outfit', sans-serif;
@@ -154,7 +155,7 @@ header {
 .imglogo-m{
     display: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
     .btn-toggle {
     display:flex;
     margin-top: 35px;
@@ -180,7 +181,7 @@ header {
     margin-right: 0;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:300px
+    height:270px
     }
     .menu-links ul{
         display: block;
@@ -191,6 +192,18 @@ header {
     .menu-linksbtn{
         display: flex;
         margin-left: 20;
+    }
+    .menusocial ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 230;
+        justify-content: center;
+        margin: auto;
+    }
+    .menusocial ul li:last-child{
+        margin-top: 1;
+        margin-left: -60;
     }
     .menusocial li:first-child{
         padding: 5px 8px;
@@ -205,7 +218,7 @@ header {
     .menu-links.active{
         margin: auto;
         margin-top: 70px;
-    display:flex
+    display:flex;
     }
     .menusocial.active {
         display:flex
@@ -283,7 +296,7 @@ header {
     font-weight: 500;
     line-height: 130%;
 }
-@media screen and (max-width:700px) {
+@media screen and (max-width:990px) {
     .bgposter{
         height: 80%;
     }
@@ -292,7 +305,7 @@ header {
         max-width: 390px;
     }
     .posterimglogo{
-        max-width: 215px;
+        max-width: 200px;
         margin: auto;
         top: 8%;
         left: 25%;
@@ -1455,4 +1468,9 @@ footer{
     .rights p{
         font-size: 12.4px;
     }
+}
+
+
+:root {
+    --scroll: 0
 }
