@@ -533,9 +533,9 @@ padding-bottom: 0px;
 }
 }
 
-.reveal{
+/*.reveal{
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(100%);
     opacity: 0;
     transition: 1s all ease;
   }
@@ -544,7 +544,7 @@ padding-bottom: 0px;
     transform: translateY(0);
     opacity: 1;
   }
-
+*/
 
 .request{
     position: relative;
