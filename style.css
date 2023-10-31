@@ -737,6 +737,27 @@ padding-bottom: 0px;
 #servicecard4 h2, #servicecard2 h2{
     width: 109px;
 }
+.contractorlink{
+    display: flex;
+    width: 300;
+    margin: auto;
+    margin-top: -15px;
+}
+.contractorlink a{
+    display: block;
+    text-decoration: none;
+    z-index: 99;
+    margin-top: 2;
+    margin-left: 10px;
+    width: 354.423px;
+    height: 37px;
+    color: var(--6th-blue-primary, #002A68);
+    font-family: 'Outfit', sans-serif;
+    font-size: 12.787px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
 }
 .diferences{
     position: relative;
