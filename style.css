@@ -69,12 +69,12 @@ header {
     max-width:2900px;
     margin: auto;
     background-color:#001D47;
-    height: 100px;
+    height: 70px;
 }
 #home:before {
     content: '';
     position: fixed;
-    height: 100px;
+    height: 80px;
     left: 0;
     right: 0;
     width: 2900px;
@@ -88,13 +88,13 @@ header {
     position: fixed;
     right: 0;
     z-index: 99;
-    padding:28px 0px;
+    padding:18px 0px;
     width: 100%;
     max-width: 1440px;
     margin: auto;
     align-items: center;
     background-color:#001D47;
-    height: 100px;
+    height: 50px;
 } 
 .menu-links{
     color:#fff;
@@ -122,7 +122,7 @@ header {
     color:#fff;
     text-decoration:none;
     font-family: 'Urbanist', sans-serif;
-    font-size: 24px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
@@ -151,19 +151,17 @@ header {
 }
 .menusocial li:first-child{
     display: inline-flex;
-    padding: 8px 24px;
+    padding: 8px 32px;
     gap: 8px;
-    border: 1px solid #FFBE50;
     background-color: #FFBE50;
-    border-radius: 20px;
+    border-radius: 72px;
 }
 .menusocial a:first-child{
     color:var(--6th-blue-primary, #002A68);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 600;
     line-height: 110%;
-    align-items: center;
+    align-items: center; 
 }
 .btn-toggle {
     position:absolute;
@@ -212,7 +210,7 @@ header {
     margin-right: 0;
     border-bottom-right-radius: 32px;
     border-bottom-left-radius: 32px;
-    height:270px
+    height:240px
     }
     .menu-links ul{
         display: block;
@@ -255,7 +253,7 @@ header {
         display:flex
     }
     .navbar {
-    padding:0px 0px
+    padding:0px 0px;
     }
     
     #home {
@@ -673,6 +671,28 @@ padding-bottom: 0px;
 #servicecard3 h2{
     width: 199px;
 }
+.contractorlink{
+    display: flex;
+    width: 400;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 10px;
+    z-index: 99;
+}
+.contractorlink a{
+    display: block;
+    text-decoration: none;
+    z-index: 99;
+    margin-top: -4;
+    width: 344.423px;
+    height: 37px;
+    color: var(--6th-blue-primary, #002A68);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18.787px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
 @media screen and (max-width:970px) {
 .servicestitle {
     display: flex;
@@ -1010,7 +1030,7 @@ padding-bottom: 0px;
     border-radius: 20px
 }
 .preferencecard img{
-    display: flex;
+    display: block;
     max-width: 310px;
 }
 .preferencecard h5{
@@ -1023,7 +1043,7 @@ padding-bottom: 0px;
     line-height: 100%; /* 20px */
 }
 #preferencecard1 h5{
-    margin-top: 32px;
+    margin-top: 52px;
     width: 232px;
 }
 #preferencecard2 h5{
@@ -1031,8 +1051,8 @@ padding-bottom: 0px;
     width: 265px;
 }
 #preferencecard3 h5 {
-    margin-top: 70px;
-    width: 163px;
+    margin-top: 140px;
+    width: 263px;
 }
 @media screen and (max-width: 770px) {
 .preference {
@@ -1050,9 +1070,9 @@ padding-bottom: 0px;
     margin-top: 25px;
 }
 .preferencegrid{
-display: flex;
-flex-direction: column;
-padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
 }
 .preferencecard{
     padding-bottom: 34px;
@@ -1503,7 +1523,7 @@ footer{
         margin-top: 0px;
         width: 100%;
         height: 100%;
-        width: 240px;
+        width: 180px;
     }
     .footersocials{
         margin-left: 0px;
