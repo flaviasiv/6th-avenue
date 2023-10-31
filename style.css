@@ -193,13 +193,14 @@ header {
         position: absolute;
         display: block;
         z-index: 999;
-        left: 2rem;
+        left: 1.9rem;
+        top: 0.6rem;
     }
     .imglogo-m img{
         width: 100%;
-        max-width: 100px;
+        max-width: 70px;
         margin: auto;
-        padding: 10px;
+        padding: 0px;
     }
     .menu-links{
     display:none;
