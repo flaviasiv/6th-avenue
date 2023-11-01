@@ -157,7 +157,7 @@ header {
     border-radius: 72px;
 }
 .menusocial a:first-child{
-    color:var(--6th-blue-primary, #002A68);
+    color:#002A68;
     font-size: 20px;
     font-weight: 600;
     line-height: 110%;
@@ -183,6 +183,11 @@ header {
 }
 .imglogo-m{
     display: none;
+}
+.menu-linksbtn a:hover,
+.menu-linksbtn a.active {
+  transition: 0.5s ease-out;
+  letter-spacing: 1px;
 }
 @media only screen and (max-width: 1100px) {
     .btn-toggle {
@@ -279,35 +284,40 @@ header {
     width: 100%;
     object-fit: cover;
 }
-.infostexts{
-    display: inline;
+.infos{
+    display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1290px;
+    max-width: 1200px;
     margin: auto;
     z-index: 1;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 .posterimglogo{
     display: block;
     position: absolute;
-    width: 100%;
-    max-width: 389px;
     margin: auto;
-    top: 30%;
-    left: 20%;
+    top: 15%;
+}
+.posterimglogo img{
+    display: block;
+    width: 100%;
+    width: 489px;
+    margin: auto;
+}
+.infostext{
+    display: flex;
+    justify-content: right;
 }
 .postercontainer h3{
     position: absolute;
     display: block;
-    width: 643px;
+    width: 640px;
     color: var(--6th-high, #FFF);
     font-family: 'Urbanist', sans-serif;
-    font-size: 70.625px;
+    font-size: clamp(2em,  3.64vw, 4.04vw);
     font-weight: 400;
-    top: 30%;
-    left: 50%;
+    top: 29%;
 }
 .postercontainer h3 span:first-child{
     text-decoration:underline#ffbe50;
@@ -315,85 +325,88 @@ header {
 }
 .postercontainer p{
     position: absolute;
-    display: block;
-    top: 62%;
-    left: 66%;
+    display: inline;
+    top: 37vw;
     width: 321px;
     border-top: 2px solid #FFBE50;
     padding-top: 25px;
-    color: var(--6th-high, #FFF);
+    margin-right: 10px;
+    color: #FFF;
     font-family: 'Outfit', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
+    font-size: clamp(0.9vw, 1.206vw, 1.204vw);
+    font-weight: 400;
     line-height: 130%;
 }
-@media screen and (max-width:1190px) {
+ @media screen and (max-width:1200px) {
     .bgposter{
-        height: 80%;
+        height: 100%;
     }
-    .infostexts{
-        flex-direction: row;
-        max-width: 590px;
+    .infos{
+        max-width: 790px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .posterimglogo{
         max-width: 280px;
-        margin: auto;
-        top: 25%;
-        left: 18%;
+        top: 17%;
+    }
+    .posterimglogo img{
+        max-width: 250px;
     }
     .postercontainer h3{
-        top: 25%;
-        left: 48%;
-        width: 473px;
-        font-size: 52.625px;
+        top: 20%;
+        width: 393px;
+        font-size: 42.625px;
     }
     .postercontainer h3 span:first-child{
         text-decoration:underline#ffbe50;
         text-underline-offset: 10px;
     }
     .postercontainer p{
-        width: 300px;
+        width: 250px;
         padding-top: 20px;
         font-size: 22px;
         font-weight: 400;
         top: 58%;
-        left: 48%;
-        width: 321px;
-
     }
 }
 @media screen and (max-width:700px) {
     .bgposter{
         height: 80%;
     }
-    .infostexts{
+    .infos{
         flex-direction: row;
-        max-width: 390px;
+        max-width: 350px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
-    .posterimglogo{
-        max-width: 200px;
+    .posterimglogo {
         margin: auto;
         top: 8%;
         left: 25%;
         justify-content: center;
         align-items: center;
     }
+    .posterimglogo img{
+        max-width: 200px;
+        margin: auto;
+    }
     .postercontainer h3{
-        width: 303px;
-        font-size: 32.625px;
-        top: 42%;
-        left: 13%;
+        width: 293px;
+        top: 45%;
+        left: 15%;
+        font-size: 32px;
     }
     .postercontainer h3 span:first-child{
         text-decoration:underline#ffbe50;
         text-underline-offset: 5px;
     }
     .postercontainer p{
-        top:67%;
-        left: 13%;
-        width: 300px;
+        top:75%;
+        left: 15%;
+        width: 270px;
         padding-top: 15px;
-        font-size: 19px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 130%;
     }
@@ -411,7 +424,7 @@ header {
 .vetor1 img{
     display: block;
     width: 100%;
-    max-width: 1990px;
+    max-width: 2990px;
     margin: auto;
 }
 .missioncontainer{
@@ -442,7 +455,7 @@ header {
 }
 .mission h3{
     width: 312px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     font-size: 40px;
@@ -451,7 +464,7 @@ header {
 }
 .mission p{
     width: 744px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 24px;
@@ -479,7 +492,7 @@ header {
 }
 .missioncard h5{
     margin-top: 39px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
@@ -532,7 +545,7 @@ padding-bottom: 0px;
 }
 }
 
-/*.reveal{
+.reveal{
     position: relative;
     transform: translateY(100%);
     opacity: 0;
@@ -542,8 +555,7 @@ padding-bottom: 0px;
   .reveal.active{
     transform: translateY(0);
     opacity: 1;
-  }
-*/
+}
 
 .request{
     position: relative;
@@ -575,9 +587,14 @@ padding-bottom: 0px;
     gap: 8px;
     border-radius: 72px;
     background: var(--6th-yellow-primary, #FFBE50);
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     font-size: 20px;
     font-weight: 600;
+}
+.request a:hover,
+.request a.active {
+  transition: 0.5s ease-out;
+  letter-spacing: 1px;
 }
 @media screen and (max-width: 770px) {
     .request{
@@ -610,7 +627,7 @@ padding-bottom: 0px;
 }
 .servicestitle h2{
     width: 249px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     font-size: 40px;
@@ -619,7 +636,7 @@ padding-bottom: 0px;
 }
 .servicestitle p{
     width: 688px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 24px;
@@ -649,6 +666,14 @@ padding-bottom: 0px;
     margin: auto;
     border-radius: 20px
 }
+
+.servicescard:hover,
+.servicescard.active {
+    width: 273px;
+  transition: 0.5s ease-out;
+  letter-spacing: 1px;
+}
+
 .servicescard img{
     display: flex;
     top: 0;
@@ -657,11 +682,15 @@ padding-bottom: 0px;
     height: 175px;
     flex-shrink: 0;
 }
+.servicescard:hover > img{
+    width: 273px;
+    transition: 0.5s ease-out;
+}
 .servicescard h2{
     margin-top: 24px;
     margin-bottom: 20px;
     width: 171px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
@@ -669,8 +698,14 @@ padding-bottom: 0px;
     font-weight: 600;
     line-height: 100%; /* 20px */
 }
+#servicecard1:hover > h2{
+    width: 181px;
+}
 #servicecard3 h2{
     width: 199px;
+}
+#servicecard3:hover > h2{
+    width: 299px;
 }
 .contractorlink{
     display: flex;
@@ -687,7 +722,7 @@ padding-bottom: 0px;
     margin-top: -4;
     width: 344.423px;
     height: 37px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     font-family: 'Outfit', sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -751,7 +786,7 @@ padding-bottom: 0px;
     margin-left: 10px;
     width: 354.423px;
     height: 37px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     font-family: 'Outfit', sans-serif;
     font-size: 12.787px;
     font-style: normal;
@@ -803,7 +838,7 @@ padding-bottom: 0px;
 }
 .diferencecard h2{
     margin-top: 36px;
-    color: var(--6th-high, #FFF);
+    color: #FFF;
     text-align: center;
     font-size: 20px;
     font-style: normal;
@@ -852,7 +887,7 @@ padding-bottom: 0px;
 }
 .testemoniestitle h3{
     width: 249px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     font-size: 40px;
@@ -861,7 +896,7 @@ padding-bottom: 0px;
 }
 .testemoniestitle p{
     width: 658px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 24px;
@@ -888,7 +923,7 @@ padding-bottom: 0px;
 }
 .testemonycard h2{
     padding-bottom: 8px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Calibri';
     font-size: 24px;
@@ -898,7 +933,7 @@ padding-bottom: 0px;
 }
 .testemonycard h6{
     padding-bottom: 8px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Calibri';
     font-size: 16px;
@@ -908,7 +943,7 @@ padding-bottom: 0px;
 }
 .testemonycard p{
     padding-top: 8px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 14px;
@@ -1011,7 +1046,7 @@ padding-bottom: 0px;
 }
 .preference h3{
     width: 249px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
     font-size: 40px;
@@ -1022,7 +1057,7 @@ padding-bottom: 0px;
     width: 770px;
     align-items: center;
     justify-content: center;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 28px;
@@ -1056,7 +1091,7 @@ padding-bottom: 0px;
     max-width: 310px;
 }
 .preferencecard h5{
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     text-align: center;
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
@@ -1183,7 +1218,7 @@ padding-bottom: 0px;
     margin-bottom: 50px;
 }
 .contacttitle h2{
-    color: var(--6th-high, #FFF);
+    color: #FFF;
     font-family: 'Urbanist', sans-serif;
     font-size: 40px;
     font-style: normal;
@@ -1256,14 +1291,94 @@ form {
 .contactbgimg-m{
     display: none;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 1270px) {
+    .contactbgimg{
+        display: none;
+    }
+    .contactbgimg-m{
+        display: block;
+        z-index: 1;
+        padding-top: 60;
+    }
+    .contact{
+        position: absolute;
+        z-index: 5;
+        gap: 0px;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacttitle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .contactinfo{
+        margin: auto
+    }
+    .contactinfo img{
+        position: relative;
+        width: 380px;
+        top: 0;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    .form{
+        position: relative;
+        top: 30;
+        width: 550px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: transparent;
+    }
+    form {
+        padding-top: 50;
+        width: 100%;
+        max-width: 550px;
+        list-style: none;
+        display: flex;
+        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: column;
+        background-color: transparent;
+        justify-content: center;
+    }
+    #form input, textarea{
+        width: 100%;
+        font-size: 10px;
+        list-style: none;
+        border: 4px solid #fff;
+        border-radius: 16px;
+        background-color: #001e4718;
+    }
+    #form button{
+        left: 50%;
+        transform: translateX(180%);
+        margin-top: 8px;
+        width: 119px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .formgroup1, .formgroup2{
+        display: flex;
+    }
+}
+@media screen and (max-width: 770px) {
     .contactcontainer{
         position: relative;
         display: flex;
         width: 100%;
         max-width: 2990px;
         margin: auto;
-        margin-top: 0px;
+        margin-top: -50px;
     }
     .contactbgimg{
         display: none;
@@ -1291,7 +1406,7 @@ form {
         margin-bottom: 10px;
     }
     .contacttitle h2{
-        color: var(--6th-high, #FFF);
+        color: #FFF;
         font-family: 'Urbanist', sans-serif;
         font-size: 14px;
         font-style: normal;
@@ -1308,14 +1423,14 @@ form {
     .contactinfo img{
         position: relative;
         width: 180px;
-        top: -50;
+        top: 0;
         margin-top: 0px;
         margin-left: 0px;
         margin-bottom: 50px;
     }
     .form{
         position: relative;
-        top: -50;
+        top: -20;
         width: 350px;
         margin-right: auto;
         margin-left: auto;
@@ -1389,7 +1504,7 @@ footer{
 }
 .footermenu1 ul li a, .footermenu2 ul li a{
     text-decoration: none;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     font-family: 'Neue';
     font-size: 16px;
     font-style: normal;
@@ -1431,7 +1546,7 @@ footer{
 .adress p{
     text-align: center;
     width: auto;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     font-family: 'Neue';
     font-size: 16px;
     font-weight: 600;
@@ -1444,7 +1559,7 @@ footer{
 .footersocials p{
     text-align: right;
     margin-right: 30px;
-    color: var(--6th-blue-primary, #002A68);
+    color: #002A68;
     font-family: 'Neue';
     font-size: 16px;
     font-style: normal;
@@ -1507,7 +1622,7 @@ footer{
     }
     .footermenu2 ul li a, .footermenu1 ul li a{
         text-decoration: none;
-        color: var(--6th-blue-primary, #002A68);
+        color: #002A68;
         font-family: 'Neue';
         font-size: 16px;
         font-style: normal;
@@ -1563,7 +1678,7 @@ footer{
     .footersocials p{
         text-align: center;
         margin: 0;
-        color: var(--6th-blue-primary, #002A68);
+        color: #002A68;
         font-family: 'Neue';
         font-size: 16px;
         font-style: normal;
@@ -1590,8 +1705,6 @@ footer{
         font-size: 11px;
     }
 }
-
-
 :root {
     --scroll: 0
 }
