@@ -550,9 +550,9 @@ padding-bottom: 0px;
     transform: translateY(100%);
     opacity: 0;
     transition: 1s all ease;
-  }
+}
   
-  .reveal.active{
+.reveal.active{
     transform: translateY(0);
     opacity: 1;
 }
@@ -650,7 +650,7 @@ padding-bottom: 0px;
     padding-top: 50px;
     padding-bottom: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .servicescard{
     position: relative;
@@ -670,7 +670,7 @@ padding-bottom: 0px;
 .servicescard:hover,
 .servicescard.active {
     width: 273px;
-  transition: 0.5s ease-out;
+  transition: 0.5s ease-in-out;
   letter-spacing: 1px;
 }
 
@@ -684,7 +684,7 @@ padding-bottom: 0px;
 }
 .servicescard:hover > img{
     width: 273px;
-    transition: 0.5s ease-out;
+    transition: 0.5s ease-in-out;
 }
 .servicescard h2{
     margin-top: 24px;
@@ -850,6 +850,16 @@ padding-bottom: 0px;
     padding: 5px;
     max-width: 236px;
 }
+.diferencesgrid.reveal{
+    transform: translateX(100%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.diferencesgrid.reveal.active{
+    transform: translateX(-50%);
+    opacity: 1;
+}
 @media screen and (max-width: 770px) {
     .diferencesgrid{
         top: 30%;
@@ -950,6 +960,15 @@ padding-bottom: 0px;
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 18.2px */
+}
+.testemoniesgrid.reveal{
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.testemoniesgrid.reveal.active{
+    transform: translateX(0%);
+    opacity: 1;
 }
 @media screen and (max-width: 970px) {
 .testemonies {
@@ -1108,7 +1127,7 @@ padding-bottom: 0px;
     width: 265px;
 }
 #preferencecard3 h5 {
-    margin-top: 140px;
+    margin-top: 70px;
     width: 263px;
 }
 @media screen and (max-width: 770px) {
