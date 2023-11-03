@@ -54,7 +54,6 @@ font-family: 'Urbanist', sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Urbanist', sans-serif;
 }
@@ -88,13 +87,13 @@ header {
     position: fixed;
     right: 0;
     z-index: 99;
-    padding:18px 0px;
     width: 100%;
     max-width: 1440px;
     margin: auto;
     align-items: center;
     background-color:#001D47;
     height: 50px;
+    padding: 18px 50px 18px 50px;
 } 
 .menu-links{
     color:#fff;
@@ -103,7 +102,7 @@ header {
     width: 53vw;
     margin: auto;
     right: 0;
-    margin-right: 100px;
+    margin-right: 0;
     align-items: center;  
     background-color:#001D47;  
 }
@@ -165,7 +164,7 @@ header {
 }
 .btn-toggle {
     position:absolute;
-    right:3rem;
+    right:50px;
     top:0;
     display:none;
     flex-direction:column;
@@ -288,10 +287,11 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1340px;
     margin: auto;
     z-index: 1;
     justify-content: space-between;
+    padding: 0 50px 0 50px;
 }
 .posterimglogo{
     display: block;
@@ -302,7 +302,7 @@ header {
 .posterimglogo img{
     display: block;
     width: 100%;
-    width: 489px;
+    width: 485px;
     margin: auto;
 }
 .infostext{
@@ -315,9 +315,9 @@ header {
     width: 640px;
     color: var(--6th-high, #FFF);
     font-family: 'Urbanist', sans-serif;
-    font-size: clamp(2em,  3.64vw, 4.04vw);
+    font-size: 70px;
     font-weight: 400;
-    top: 29%;
+    top: 27%;
 }
 .postercontainer h3 span:first-child{
     text-decoration:underline#ffbe50;
@@ -342,21 +342,20 @@ header {
         height: 100%;
     }
     .infos{
-        max-width: 790px;
-        padding-left: 10px;
-        padding-right: 10px;
+        max-width: 890px;
+        padding: 0 50px 0 50px;
     }
     .posterimglogo{
         max-width: 280px;
         top: 17%;
     }
     .posterimglogo img{
-        max-width: 250px;
+        max-width: 300px;
     }
     .postercontainer h3{
         top: 20%;
         width: 393px;
-        font-size: 42.625px;
+        font-size: 4vw;
     }
     .postercontainer h3 span:first-child{
         text-decoration:underline#ffbe50;
@@ -377,8 +376,7 @@ header {
     .infos{
         flex-direction: row;
         max-width: 350px;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding: 0;
     }
     .posterimglogo {
         margin: auto;
@@ -438,20 +436,18 @@ header {
     width: 100%;
     max-width: 1240px;
     margin: auto;
-    padding-top: 100px;
-    padding-bottom: 55px;
     border-bottom: 2px solid #FFBE50;
     display: flex;
     justify-content: space-between;
+    padding: 100px 50px 55px 50px;
 }
 .missiongrid{
     width: 100%;
-    max-width: 1240px;
+    max-width: 1340px;
     margin: auto;
-    padding-top: 50px;
-    padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
+    padding: 50px 50px 40px 50px;
 }
 .mission h3{
     width: 312px;
@@ -514,6 +510,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 0;
+    padding-left: 0;
 }
 .mission h3{
     width: 252px;
@@ -612,8 +610,9 @@ padding-bottom: 0px;
 }
 .services{
     width: 100%;
-    max-width: 1200px;
+    max-width: 1340px;
     margin: auto;
+    padding: 0 50px 0 50px;
 }
 .servicestitle{
     width: 100%;
@@ -736,6 +735,10 @@ padding-bottom: 0px;
     align-items: center;
     text-align: center;
 }
+.services{
+padding-right: 0;
+padding-left: 0;
+}
 .servicestitle h2{
     width: 252px;
     font-size: 30px;
@@ -816,13 +819,13 @@ padding-bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 1200px;
+    max-width: 1340px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding-left: 20px;
+    padding: 0 50px 0 50px;
 }
 .diferencecard{
     display: flex;
@@ -864,7 +867,8 @@ padding-bottom: 0px;
     .diferencesgrid{
         top: 30%;
         max-width: 340px;
-        padding-left: 0px;
+        padding-right: 0;
+        padding-left: 0;
     }
     .diferencecard svg{
         width: 70.994px;
@@ -889,11 +893,11 @@ padding-bottom: 0px;
 }
 .testemoniestitle{
     width: 100%;
-    max-width: 1240px;
+    max-width: 1340px;
     margin: auto;
-    padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
+    padding: 0 50px 40px 50px;
 }
 .testemoniestitle h3{
     width: 249px;
@@ -919,9 +923,9 @@ padding-bottom: 0px;
     align-items: center;
     text-align: center;
     width: 100%;
-    max-width: 1240px;
+    max-width: 1340px;
     margin: auto;
-    padding-bottom: 60px;
+    padding: 50 50px 60px 50px;
 }
 .testemonycard{
     width: 343px;
@@ -982,6 +986,8 @@ padding-bottom: 0px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-right: 0;
+    padding-left: 0;
 }
 .testemoniestitle h3{
     width: 252px;
@@ -998,6 +1004,8 @@ padding-bottom: 0px;
     width: 100%;
     max-width:340px;
     padding-bottom: 60px;
+    padding-right: 0;
+    padding-left: 0;
 }
 .testemonycard{
     width: 343px;
@@ -1058,10 +1066,10 @@ padding-bottom: 0px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 40px;
     border-bottom: 2px solid #FFBE50;
     display: flex;
     justify-content: space-between;
+    padding: 0 50px 40px 50px;
 }
 .preference h3{
     width: 249px;
@@ -1135,6 +1143,8 @@ padding-bottom: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-right: 0;
+    padding-left: 0;
 }
 .preference h3{
     width: 252px;
@@ -1219,14 +1229,20 @@ padding-bottom: 0px;
 .contact{
     position: absolute;
     z-index: 5;
-    top: 15%;
+    top: 10%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: auto;
     display: flex;
     gap: 90px;
+    padding: 0 50px 0 50px;
+}
+@media screen and (max-width:1400px) {
+    .contact{        
+    top:5%;
+    }
 }
 .contacttitle {
     display: flex;
@@ -1247,7 +1263,9 @@ padding-bottom: 0px;
 }
 .contactinfo img{
     display: block;
-    width: 550px;
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
     margin-top: 200px;
 }
 .form{
@@ -1281,7 +1299,7 @@ form {
 }
 #form button{
     left: 50%;
-    transform: translateX(97%);
+    transform: translateX(130%);
     margin-top: 10px;
     width: 189px;
     border-radius: 5px;
@@ -1310,7 +1328,7 @@ form {
 .contactbgimg-m{
     display: none;
 }
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 1000px) {
     .contactbgimg{
         display: none;
     }
@@ -1329,6 +1347,8 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0;
+        padding-top: 80px;
     }
     .contacttitle {
         display: flex;
@@ -1343,7 +1363,7 @@ form {
     }
     .contactinfo img{
         position: relative;
-        width: 380px;
+        max-width: 380px;
         top: 0;
         margin-top: 0px;
         margin-left: 0px;
@@ -1415,6 +1435,10 @@ form {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 0;
+        padding-top: 60px;
+        padding-right: 0;
+        padding-left: 0;
     }
     .contacttitle {
         display: flex;
@@ -1512,6 +1536,7 @@ footer{
     max-width: 1440px;
     margin: auto;
     justify-content: space-between;
+    padding: 0 10px 0 10px;
 }
 .footermenu1, .footermenu2{
     display: flex;
@@ -1554,7 +1579,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
     margin-top: -100px;
-    width: 250px;
+    width: 200px;
 }
 .adress{
     display: flex;
