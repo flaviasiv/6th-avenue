@@ -366,6 +366,7 @@ header {
         align-items: center;
     }
     .posterimglogo img{
+        min-width: 330px;
         max-width: 300px;
         margin: auto;
     }
@@ -404,18 +405,20 @@ header {
     .posterimglogo {
         margin: auto;
         top: 8%;
-        left: 25%;
+        left: 50%;
+        transform: translateX(-50%);
         justify-content: center;
         align-items: center;
     }
     .posterimglogo img{
-        max-width: 200px;
-        margin: auto;
+        min-width: 30px;
+        width: 200px;
     }
     .postercontainer h3{
         width: 293px;
         top: 45%;
-        left: 15%;
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 32px;
     }
     .postercontainer h3 span:first-child{
@@ -424,7 +427,8 @@ header {
     }
     .postercontainer p{
         top:75%;
-        left: 15%;
+        left: 50%;
+        transform: translateX(-50%);
         width: 293px;
         padding-top: 15px;
         font-size: 16px;
