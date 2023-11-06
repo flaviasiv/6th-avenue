@@ -348,7 +348,31 @@ header {
     font-weight: 400;
     line-height: 130%;
 }
- @media screen and (max-width:1200px) {
+@media screen and (max-width:1240px) {
+    .posterimglogo{
+        top: 10%;
+    }
+    .posterimglogo img{
+        min-width: 350px;
+        max-width: 385px;
+    }
+    .postercontainer h3{
+        width: 620px;
+        font-size: 60px;
+        top: 20%;
+    }
+    .postercontainer h3 span:first-child{
+        text-underline-offset: 13px;
+    }
+    .postercontainer p{
+        top: 33vw;
+        width: 311px;
+        font-size: 22px;
+        line-height: 125%;
+    }
+
+}
+ @media screen and (max-width:1100px) {
     .bgposter{
         height: 90%;
     }
@@ -468,11 +492,19 @@ header {
     justify-content: space-between;
     padding: 100px 50px 55px 50px;
 }
-.missiongrid{
+.missionborder{
+    height: 2px;
     width: 100%;
     max-width: 1340px;
     margin: auto;
     border-top: 2px solid #FFBE50;
+    display: flex;
+    padding: 0 50px 0 50px;
+}
+.missiongrid{
+    width: 100%;
+    max-width: 1340px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     padding: 50px 50px 40px 50px;
