@@ -56,10 +56,10 @@ font-family: 'Urbanist', sans-serif;
 }
 body{
     font-family: 'Urbanist', sans-serif;
-    scroll-behavior: calc(2s)
+    scroll-behavior: smooth
 }
 html{
-    scroll-behavior: calc(2s)
+    scroll-behavior: smooth
 }
 header {
     position: relative;
@@ -297,23 +297,23 @@ header {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1340px;
+    max-width: 1440px;
     margin: auto;
     z-index: 1;
     justify-content: space-between;
-    padding: 0 50px 0 50px;
+    padding: 0 100px 0 100px;
 }
 .posterimglogo{
     display: block;
     position: absolute;
     margin: auto;
-    top: 15%;
+    top: 20%;
 }
 .posterimglogo img{
     display: block;
     width: 100%;
-    min-width: 430px;
-    max-width: 485px;
+    min-width: 290px;
+    max-width: 355px;
     margin: auto;
 }
 .infostext{
@@ -323,12 +323,12 @@ header {
 .postercontainer h3{
     position: absolute;
     display: block;
-    width: 640px;
     color: #FFF;
     font-family: 'Urbanist', sans-serif;
-    font-size: 70px;
     font-weight: 400;
-    top: 27%;
+    width: 599px;
+    font-size: 60px;
+    top: 23%;
 }
 .postercontainer h3 span:first-child{
     text-decoration:underline#ffbe50;
@@ -337,16 +337,16 @@ header {
 .postercontainer p{
     position: absolute;
     display: inline;
-    top: 37vw;
-    width: 321px;
     border-top: 2px solid #FFBE50;
     padding-top: 25px;
-    margin-right: 10px;
+    margin-right: 50px;
     color: #FFF;
     font-family: 'Outfit', sans-serif;
-    font-size: 24px;
     font-weight: 400;
-    line-height: 130%;
+    top: 32vw;
+    width: 265px;
+    font-size: 20px;
+    line-height: 125%;
 }
 @media screen and (max-width:1240px) {
     .infos{
@@ -1058,28 +1058,19 @@ padding-left: 0;
     font-weight: 400;
     line-height: 130%; /* 18.2px */
 }
-.testemoniesgrid.reveal{
+.testemonycard.reveal{
     transform: translateX(-100%);
     opacity: 0;
     transition: 1s all ease;
 }
-.testemoniesgrid.reveal.active{
+.testemonycard.reveal.active{
     transform: translateX(0%);
     opacity: 1;
 }
 .testemonycard:hover,
 .testemonycard.active {
-    width: 355px;
-    height: 218px;
+    opacity: 0.9;
   transition: 0.5s ease;
-}
-.testemonycard:hover > p{
-    font-size: 14.2px;
-    transition: 0.5s ease;
-}
-.testemonycard:hover > h2{
-    font-size: 24.5px;
-    transition: 0.5s ease;
 }
 @media screen and (max-width: 970px) {
 .testemonies {
@@ -1142,20 +1133,6 @@ padding-left: 0;
 .testemonycard p{
     padding-top: 8px;
     font-size: 15px;
-}
-.testemonycard:hover,
-.testemonycard.active {
-    width: 345px;
-    height: 210px;
-  transition: 0.5s ease;
-}
-.testemonycard:hover > p{
-    font-size: 15.2px;
-    transition: 0.5s ease;
-}
-.testemonycard:hover > h2{
-    font-size: 20.5px;
-    transition: 0.5s ease;
 }
 }
 .vetor{
