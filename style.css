@@ -156,6 +156,9 @@ header {
     cursor: pointer;
     align-items: center;
 }
+.menusocial ul li:first-child{
+    margin-top: 1px;
+}
 .menusocial li:first-child{
     display: inline-flex;
     padding: 8px 32px;
@@ -286,7 +289,7 @@ header {
       margin: auto;
   }
   .menusocial ul li:last-child{
-      margin-top: 0;
+      margin-top: -1px;
       margin-left: -40;
   }
   .menusocial li:first-child{
