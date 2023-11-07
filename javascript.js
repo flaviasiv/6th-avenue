@@ -1,10 +1,19 @@
 //navlinks menu mobile
-const toggleButton = document.getElementsByClassName('btn-toggle')[0]
-const navbarLinks = document.getElementsByClassName('menu-links', 'menusocial')[0]
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-})
+let menu_icon_box = document.querySelector(".btn-toggle");
+let box = document.querySelector(".box");
+
+
+menu_icon_box.onclick = function(){
+    menu_icon_box.classList.toggle("active");
+    box.classList.toggle("active_box");
+}
+document.onclick = function(e){
+    if (!menu_icon_box.contains(e.target) && !box.contains(e.target) ) {
+        menu_icon_box.classList.remove("active");
+        box.classList.remove("active_box");
+    }
+}
 
 // scroll behavior
 let section = document.querySelectorAll("main");
@@ -21,7 +30,7 @@ window.onscroll = () => {
       menu.forEach((link) => {
         link.classList.remove("active");
         document
-          .querySelector("header nav a[href*=" + id + "]")
+          .querySelector("header nav a[href*=" + id + "]", ".testemonycard")
           .classList.add("active");
       });
     }
