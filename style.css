@@ -378,6 +378,9 @@ header {
     text-decoration:underline #ffbe50;
     text-underline-offset: 15px;
 }
+.postercontainer h3 span svg{
+    display: none;
+}
 .postercontainer p{
     position: absolute;
     display: inline;
@@ -502,8 +505,15 @@ header {
         font-size: 32px;
     }
     .postercontainer h3 span:first-child{
-        text-decoration:underline#ffbe50;
+        text-decoration:none;
         text-underline-offset: 5px;
+    }
+    .postercontainer h3 span svg{
+        display: flex;
+        position: absolute;
+        max-width: 87px;
+        top: 37px;
+        left: 206px;
     }
     .postercontainer p{
         top:75%;
