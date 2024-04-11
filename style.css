@@ -669,7 +669,7 @@ padding-bottom: 0px;
 .reveal{
     position: relative;
     transform: translateY(100%);
-    opacity: 0;
+    opacity: 0.2;
     transition: 1s all ease;
 }
 .reveal.active{
@@ -982,7 +982,7 @@ padding-left: 0;
 }
 .diferencesgrid.reveal{
     transform: translateX(-100%);
-    opacity: 0;
+    opacity: 0.2;
     transition: 1s all ease;
 }
 .diferencesgrid.reveal.active{
@@ -1113,7 +1113,7 @@ padding-left: 0;
 }
 .testemonycard.reveal{
     transform: translateX(-100%);
-    opacity: 0;
+    opacity: 0.2;
     transition: 1s all ease;
 }
 .testemonycard.reveal.active{
