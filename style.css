@@ -723,11 +723,11 @@ padding-bottom: 0px;
     }
 
 }
-.servicescontainer{
+.servicescontainer, .videocontainer{
     position: relative;
     background: #F3F3F3;
     width: 100%;
-    max-width: 2990px;
+    max-width: 9990px;
     margin: auto;
 }
 .services{
@@ -789,7 +789,6 @@ padding-bottom: 0px;
 .servicescard img{
     display: flex;
     top: 0;
-
     width: 263px;
     height: 175px;
     flex-shrink: 0;
@@ -924,6 +923,22 @@ padding-left: 0;
     transition: 0.5s ease;
     letter-spacing: 1px;
 }
+}
+.videocontainer{
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 9999px;
+    margin: auto;
+    padding: 59px 0 0 0;
+    background-color: #F3F3F3;
+}
+.videocontainer video{
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 40px;
 }
 .diferences{
     position: relative;
