@@ -340,7 +340,6 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
-    right: -2px;
     bottom: -3px;
     position: absolute;
 }
@@ -351,6 +350,8 @@ header {
 }
 .bgposter video{
     width: 100%;
+    max-width: 9999px;
+    margin: auto;
     z-index: 0;
     object-fit: cover;
 }
