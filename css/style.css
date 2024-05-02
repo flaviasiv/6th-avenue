@@ -340,8 +340,8 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
-    margin: -1px;
-    bottom: -2px;
+    right: -2px;
+    bottom: -3px;
     position: absolute;
 }
 .bgposter{
