@@ -609,15 +609,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 273px;
     width: 100%;
     max-width: 303px;
     margin: auto;
 }
 .missioncard img{
     display: flex;
-    width: 273px;
-    height: 255px;
+    max-width: 299px;
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
@@ -631,7 +629,7 @@ header {
     font-style: normal;
     font-weight: 600;
 }
-#missioncard1{    
+/* #missioncard1{    
     width: 232px;
 }
 #missioncard2{
@@ -639,7 +637,7 @@ header {
 }
 #missioncard3{
     width: 189px;
-}
+} */
 @media screen and (max-width: 970px) {
 .mission {
     display: flex;
@@ -855,7 +853,7 @@ padding-bottom: 0px;
     font-weight: 400;
     line-height: 130%;
 }
-@media screen and (max-width:970px) {    
+@media screen and (max-width:1130px) {    
 .servicestitle {
     display: flex;
     flex-direction: column;
@@ -1154,7 +1152,7 @@ padding-left: 0;
 
   transition: 0.5s ease;
 }
-@media screen and (max-width: 970px) {
+@media screen and (max-width:1130px) {  
 .testemonies {
     display: flex;
     flex-direction: column;
