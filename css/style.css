@@ -814,6 +814,7 @@ padding-left: 0;
     background: #F3F3F3;
     margin: auto;
     color: #002A68;
+    padding-bottom: 50px;
 }
 .mission {
     width: 100%;
@@ -905,10 +906,10 @@ padding-left: 0;
  .listareas{
     display: flex;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     justify-content: space-between;
-    padding-bottom: 50px;
+    padding: 50px;
 }
 .listareas h1{
     font-size: 40px;
@@ -939,28 +940,34 @@ padding-left: 0;
     font-size: 30px;
 }
 .mission p{
-    width: 344px;
+    width: 100%;
     font-size: 16px;
     margin-top: 25px;
 }
 .missiongrid{
-display: flex;
-flex-direction: column;
-padding-bottom: 0px;
+    flex-direction: column;
+    width: 100%;
+    max-width: 903px;
+    padding: 50px;
+    gap: 50px;
 }
-.missioncard{
-    padding-bottom: 34px;
-}
-.missioncard:last-child{
-    padding-bottom: 0;
-}
-.missioncard img{
-    width: 223px;
-    height: 205px;
+.missioncards{
+    gap: 15px;
 }
 .missioncard h5{
-    margin-top: 19px;
     font-size: 16px;
+}
+.listareas{
+   flex-direction: column;
+   padding: 50px 10px;
+}
+.listareas h1{
+   font-size: 34px;
+   padding-bottom: 30px;
+}
+.list{
+   gap: 5px; 
+   font-size: 12px;
 }
 }
 
@@ -973,7 +980,7 @@ padding-bottom: 0px;
 .reveal.active{
     transform: translateY(0);
     opacity: 1;
-}
+}/* 
 .videocontainer{
     position: relative;
     display: flex;
@@ -989,26 +996,31 @@ padding-bottom: 0px;
     max-width: 500px;
     margin: auto;
     border-radius: 40px;
-}
+} */
 .diferences{
     position: relative;
     display: flex;
     flex-direction: column;
     width: 100%;
     max-width: 9999px;
-    margin: auto;
-    background-image: linear-gradient(to bottom, #F3F3F3, #F3F3F3, #F3F3F3, #F3F3F3, #F3F3F3, #F3F3F3, #ffbe50, #ffbe50);  
+    margin: auto; 
+    max-height: 600px;
 }
-.diferences video{
-    z-index: 1;
+.videoimgdif video{
     width: 100%;
     max-width: 9999px;
     margin: auto;
 }
+.videoimgdif::after {
+    content: '';
+    inset: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
+    /* background: linear-gradient(0deg, rgba(8, 47, 66, 0.30) 0%, rgba(8, 47, 66, 0.30) 100%), linear-gradient(180deg, rgba(8, 47, 66, 0.00) 0%, #0C1B32 100%);  */  
+    position: absolute;}
 .diferencesgrid{
     position: absolute;
     z-index: 5;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
