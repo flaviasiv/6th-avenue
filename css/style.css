@@ -2067,6 +2067,10 @@ footer{
     border-radius: 72px;
     width:180px;
 }
+.content a:hover svg{
+    fill: #ffbe50;
+    transition: 0.2s all ease-in-out;
+}
 .content a{
     color: inherit;
     display: flex;
