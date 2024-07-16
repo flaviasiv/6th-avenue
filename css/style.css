@@ -947,7 +947,7 @@ padding-left: 0;
 .missiongrid{
     flex-direction: column;
     width: 100%;
-    max-width: 903px;
+    max-width: 513px;
     padding: 50px;
     gap: 50px;
 }
@@ -1531,10 +1531,9 @@ form {
     margin: auto;
     height: auto;
     margin-top: 100px;
-    margin-bottom: 90px;
     background: url(../assets/Union22.png);
     background-position: cover;
-    background-size: 120%;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 .contact{
@@ -1544,7 +1543,7 @@ form {
     max-width: 1400px;
     margin: auto;
     height: 100%;
-    padding: 400px 50px 200px 50px;
+    padding: 300px 50px 90px 50px;
 }
 .contacttitle {
     display: flex;
@@ -1637,7 +1636,7 @@ input::placeholder, textarea::placeholder{
  @media screen and (max-width: 1500px) {
     .contactcontainer{
         background: url(../assets/Union22.png) no-repeat;
-        background-size: 100%;
+        background-size: 120%;
         max-height: 800px;
     }
 }
@@ -1792,7 +1791,6 @@ input::placeholder, textarea::placeholder{
 }
 @media screen and (max-width:770px) {
     .contactcontainer{
-        margin-bottom: 20px;
         margin-top: 0px;
         background-position: center;
     }
@@ -1806,8 +1804,8 @@ footer{
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    height: 100px;
-    background-color: #FFF;
+    padding-top: 90px;
+    background-color: #001D47;
     font-family: 'Neue';
 }
 .footergrid{
@@ -1816,7 +1814,7 @@ footer{
     max-width: 1440px;
     margin: auto;
     justify-content: space-between;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 20px 10px;
 }
 .footermenu1, .footermenu2{
     display: flex;
@@ -1828,11 +1826,11 @@ footer{
 }
 .footermenu1 ul li a, .footermenu2 ul li a{
     text-decoration: none;
-    color: #002A68;
+    color: #fff;
     font-family: 'Neue';
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 160%;
 }
 .footermenu1 ul{
@@ -1870,10 +1868,10 @@ footer{
 .adress p{
     text-align: center;
     width: auto;
-    color: #002A68;
+    color: #fff;
     font-family: 'Neue';
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 120%; /* 25.6px */
 }
 .footersocials{
@@ -1883,11 +1881,11 @@ footer{
 .footersocials p{
     text-align: right;
     margin-right: 30px;
-    color: #002A68;
+    color: #fff;
     font-family: 'Neue';
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 160%; /* 25.6px */
 }
 .footersocials ul {
@@ -1908,13 +1906,13 @@ footer{
     max-width: 9999px;
     margin: auto;
     padding: 34px 0;
-    background-color: #fff;
+    background-color: #001D47;
     align-items: center;
     text-align: center;
-    border-top: 1px solid #002a68b4;
+    border-top: 1px solid #fff;
 }
 .rights p{
-    color: #002A68;
+    color: #fff;
     font-family: 'Neue';
     font-size: 14.4px;
     font-weight: 500;
@@ -1925,9 +1923,6 @@ footer{
         position: relative;
         width: 100%;
         max-width: 9999px;
-        margin: auto;
-        height: 100px;
-        background-color: #FFF;
         margin: auto;
     }
     .footergrid{
@@ -1943,15 +1938,6 @@ footer{
     }
     .footermenu2 ul li {
         list-style: none;
-    }
-    .footermenu2 ul li a, .footermenu1 ul li a{
-        text-decoration: none;
-        color: #002A68;
-        font-family: 'Neue';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 160%;
     }
     .footermenu2, .footermenu1{
         display: flex;
@@ -2002,12 +1988,6 @@ footer{
     .footersocials p{
         text-align: center;
         margin: 0;
-        color: #002A68;
-        font-family: 'Neue';
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 160%; 
     }
     .footersocials ul {
         list-style: none;
@@ -2016,7 +1996,6 @@ footer{
         justify-content: center;
         gap: 5px;
         padding-top: 8px;
-        margin-left: 19px;
     }
     .footersocials ul a{
         text-decoration: none;
