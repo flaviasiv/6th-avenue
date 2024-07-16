@@ -785,6 +785,13 @@ padding-left: 0;
     color: #FFBE50;
     background: #002A68;
 }
+.request2{
+    background-image: none;
+    height: 60px;
+}
+.request2 a{
+    width: 280px;
+}
 @media screen and (max-width: 770px) {
     .request{
         height: 120px;
@@ -1530,7 +1537,7 @@ form {
     max-width: 9999px;
     margin: auto;
     height: auto;
-    margin-top: 100px;
+    margin-top: 0px;
     background: url(../assets/Union22.png);
     background-position: cover;
     background-size: 100%;
