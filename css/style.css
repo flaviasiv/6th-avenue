@@ -120,7 +120,7 @@ header {
     display: flex;
     margin: 0 auto;
     justify-content:space-between;
-    width:330px;
+    width:390px;
     text-align: center;
 }
 .menu-linksbtn a {
@@ -131,13 +131,13 @@ header {
     font-family: 'Urbanist', sans-serif;
     font-size: 16px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 400;
     line-height: 130%;
     letter-spacing:1px
 }
 .menu-linksbtn a:hover{
     color: #FFBE50;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .menusocial{
     margin-left: 0vw;
@@ -163,7 +163,7 @@ header {
     align-items: center;
     text-align: left;
     padding: 8px 6px;
-    color:#fff;
+    color:#FFBE50;
     border: 1px solid #fff;
     border-radius: 72px;
     width: 180px;
@@ -278,8 +278,6 @@ header {
   .menusocial li a:first-child{
     padding: 0;
   }
-  
-  
   .menu-links.active{
       margin: auto;
       margin-top: 70px;
@@ -318,7 +316,9 @@ header {
     margin: auto;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-color: #001e47de;
     z-index: 9;
+    padding-bottom: 40px;
 }
 .postercontainer::after {
     content: '';
@@ -327,7 +327,7 @@ header {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: bottom;
-    bottom: -3px;
+    bottom: -2px;
     position: absolute;
 }
 .bgposter{
@@ -570,7 +570,7 @@ header {
     margin: auto;
     display: flex;
     justify-content: space-around;
-    padding: 50px 50px 40px 50px;
+    padding: 50px 50px 19px 50px;
 }
 .servicescard{
     position: relative;
@@ -583,22 +583,38 @@ header {
     background-color: #fff;
     max-width: 303px;
     margin: auto;
-    border-radius: 20px
+    border-radius: 24px;
+    padding-bottom: 20px;
 }
 .servicescard img{
+    position: relative;
+    z-index: 1;
     display: flex;
     top: 0;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
     width: 263px;
     height: 175px;
     flex-shrink: 0;
 }
-.servicescard:hover {
-    width: 273px;
-  transition: 0.5s ease-in-out;
+.servicescard::before{
+    content: '';
+    position: fixed;
+    height: 175px;
+    left: 0;
+    top: 0;
+    right: 0;
+    width:100%;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    background-color:#002A68;
+    opacity: 0.2;
+    z-index: 99;
+    box-sizing: border-box;
 }
-.servicescard:hover > img{
-    width: 273px;
-    transition: 0.5s ease-in-out;
+.servicescard:hover {
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5); 
+  transition: 0.2s ease-in;
 }
 .servicescard h2{
     margin: auto;
@@ -665,84 +681,87 @@ header {
     font-weight: 400;
     line-height: 130%;
 }
-@media screen and (max-width:1130px) {    
-.servicestitle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.services{
-padding-right: 0;
-padding-left: 0;
-}
-.servicestitle h2{
-    width: 252px;
-    font-size: 30px;
-}
-.servicestitle p{
-    width: 344px;
-    font-size: 16px;
-    margin-top: 25px;
-}
-.servicesgrid{
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 24px;
-    padding: 50px 10px;
-}
-.servicesgrid > .servicescard {
-    flex: 50%; 
-}
-.servicescard{
-    max-width: 163px;
-    height: fit-content;
-}
-.servicescard:last-child{
-    padding-bottom: 0;
-}
-.servicescard img{
-    width: 100%;
-    height: fit-content;
-    max-width: 163px;
-    margin: auto;
-}
-.servicescard h2{
-    margin-top: 19px;
-    font-size: 15px;
-}
-.contractorlink{
-    display: flex;
-    width: 300;
-    margin: auto;
-    margin-top: -15px;
-}
-.contractorlink a{
-    display: block;
-    text-decoration: none;
-    z-index: 99;
-    margin-top: 2;
-    margin-left: 10px;
-    width: 354.423px;
-    height: 37px;
-    color: #002A68;
-    font-family: 'Outfit', sans-serif;
-    font-size: 12.787px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%;
-}
-.servicescard:hover,
-.servicescard.active {
-    max-width: 169px;
-  transition: 0.5s ease;
-  letter-spacing: 1px;
-}
-.servicescard:hover > img{
-    max-width: 169px;
-    transition: 0.5s ease;
-    letter-spacing: 1px;
-}
+@media screen and (max-width:1130px) {     
+    .servicescard::before{
+        content: '';
+        position: fixed;
+        height: 110px;
+        left: 0;
+        top: 0;
+        right: 0;
+        width:163px;
+        margin: auto;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        background-color:#002A68;
+        opacity: 0.2;
+        z-index: 99;
+        box-sizing: border-box;
+    }   
+    .servicestitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .services{
+    padding-right: 0;
+    padding-left: 0;
+    }
+    .servicestitle h2{
+        width: 252px;
+        font-size: 30px;
+    }
+    .servicestitle p{
+        width: 344px;
+        font-size: 16px;
+        margin-top: 25px;
+    }
+    .servicesgrid{
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 24px;
+        padding: 50px 10px;
+    }
+    .servicesgrid > .servicescard {
+        flex: 50%; 
+    }
+    .servicescard{
+        max-width: 163px;
+        height: fit-content;
+    }
+    .servicescard img{
+        width: 100%;
+        height: fit-content;
+        max-width: 163px;
+        height: 110px;
+        margin: auto;
+    }
+    .servicescard h2{
+        margin-top: 19px;
+        font-size: 15px;
+    }
+    .contractorlink{
+        display: flex;
+        width: 300;
+        margin: auto;
+        margin-top: -15px;
+    }
+    .contractorlink a{
+        display: block;
+        text-decoration: none;
+        z-index: 99;
+        margin-top: 2;
+        margin-left: 10px;
+        width: 354.423px;
+        height: 37px;
+        color: #002A68;
+        font-family: 'Outfit', sans-serif;
+        font-size: 12.787px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
 }
 .request{
     position: relative;
@@ -752,7 +771,7 @@ padding-left: 0;
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    height: 180px;
+    height: 230px;
     background-image: url(../assets/Vector.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -913,7 +932,7 @@ padding-left: 0;
  .listareas{
     display: flex;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1240px;
     margin: auto;
     justify-content: space-between;
     padding: 50px;
@@ -928,7 +947,7 @@ padding-left: 0;
     gap: 60px; 
     font-size: 16px;
     font-weight: 700;
-    line-height: 200%;
+    line-height: 300%;
 }
 .list ul li{
     list-style: inside;
@@ -1011,19 +1030,22 @@ padding-left: 0;
     width: 100%;
     max-width: 9999px;
     margin: auto; 
-    max-height: 600px;
+    max-height: 900px;
 }
 .videoimgdif video{
     width: 100%;
     max-width: 9999px;
     margin: auto;
+    object-fit: cover;
+    object-position: center;
 }
 .videoimgdif::after {
     content: '';
     inset: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%);
-    /* background: linear-gradient(0deg, rgba(8, 47, 66, 0.30) 0%, rgba(8, 47, 66, 0.30) 100%), linear-gradient(180deg, rgba(8, 47, 66, 0.00) 0%, #0C1B32 100%);  */  
-    position: absolute;}
+    background: linear-gradient(0deg, #001D47 100%, rgba(0, 0, 0, 0.40) 100%);
+    position: absolute;
+    opacity: 0.6;
+}
 .diferencesgrid{
     position: absolute;
     z-index: 5;
@@ -1105,16 +1127,6 @@ padding-left: 0;
     #diferencecard3 h2{
         padding: 0px;
         max-width: 136px;
-    }
-    .diferencecard:hover,
-    .diferencecard.active {
-      transition: 0.5s ease;
-      letter-spacing: 1px;
-    }
-    .diferencecard:hover > svg{
-        width: 75px;
-        height: 65px;
-        transition: 0.5s ease;
     }
 }
 .testimonies{
@@ -1285,6 +1297,47 @@ padding-left: 0;
 .vetor img{
     display: block;
     width: 100%;
+}
+/* IG CONTAINER */
+.ig-embed{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 9999px;
+    margin: auto;
+    padding: 30px 0 50px;
+}
+.ig-embed h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 120%;
+    margin-bottom: 32px;
+}
+.ig-embed h2 span{
+    margin-top: 30px;
+}
+.ig-embed iframe{
+    width:900px; 
+    height:810px;
+}
+@media screen and (max-width:980px) {
+    .ig-embed iframe{
+        width:500px; 
+        height:500px;
+    }    
+}
+@media screen and (max-width:580px) {
+    .ig-embed iframe{
+        width:100%;
+        max-width: 400px; 
+        height: 450px;
+    }    
 }
 .preferencecontainer{
     position: relative;
@@ -1578,6 +1631,7 @@ form {
     justify-content: center;
     width: 100%;
     max-width: 650px;
+    margin-top: 50px;
 }
 .form{
     color: #fff;
@@ -1837,7 +1891,7 @@ footer{
     font-family: 'Neue';
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 160%;
 }
 .footermenu1 ul{
@@ -2123,3 +2177,6 @@ footer{
     fill: #001D47;
     transition: 0.2s all ease-in-out;
 }
+li::marker {
+    color: #FFBE50;
+  }
