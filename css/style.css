@@ -1891,7 +1891,7 @@ footer{
     font-family: 'Neue';
     font-size: 16px;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 100;
     line-height: 160%;
 }
 .footermenu1 ul{
@@ -1932,7 +1932,7 @@ footer{
     color: #fff;
     font-family: 'Neue';
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 120%; /* 25.6px */
 }
 .footersocials{
@@ -1941,12 +1941,12 @@ footer{
 }
 .footersocials p{
     text-align: right;
-    margin-right: 30px;
+    margin-right: 40px;
     color: #fff;
     font-family: 'Neue';
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 160%; /* 25.6px */
 }
 .footersocials ul {
@@ -1976,7 +1976,7 @@ footer{
     color: #fff;
     font-family: 'Neue';
     font-size: 14.4px;
-    font-weight: 500;
+    font-weight: 100;
     line-height: 150%;
 }
 @media screen and (max-width: 770px) {
