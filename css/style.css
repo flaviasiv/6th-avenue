@@ -2173,6 +2173,9 @@ footer{
     border: #FFF;
     transition: 0.2s all ease-in-out;
 }
+.callw:hover{
+    color: #FFBE50;
+}
 .btn1:hover svg{
     fill: #001D47;
     transition: 0.2s all ease-in-out;
