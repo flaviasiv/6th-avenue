@@ -321,9 +321,9 @@ header {
     background-size: 100%;
     background-color: #001e47de;
     z-index: 9;
-    padding-bottom: 0px;
+    padding-bottom: 20px;
 }
-/* .postercontainer::after {
+.postercontainer::after {
     content: '';
     inset: 0;
     background-image: url(../assets/Vector5.png);
@@ -332,7 +332,7 @@ header {
     background-position: bottom;
     bottom: -2px;
     position: absolute;
-} */
+}
 .bgposter{
     display: block;
     width: 100%;
