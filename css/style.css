@@ -177,6 +177,9 @@ header {
     line-height: 100%;
     align-items: center; 
 }
+.callw a svg{
+    fill: #fff;
+}
 .btn-toggle, .imgbarm{display: none;}
 @media screen and (max-width:1000px) {
   .box{
@@ -243,14 +246,14 @@ header {
   .menu-links{
   flex-direction: column;
   align-items:center;
-  margin-top: 60px;
+  margin-top: 40px;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
   background-color: #001D47;
-  height:230px
+  height:250px
   }
   .menu-links ul{
       display: block;
@@ -880,7 +883,7 @@ header {
     height: 100%;
 }
 .mission h3{
-    width: 312px;
+    width: 342px;
     color: #002A68;
     text-align: center;
     font-family: 'Urbanist', sans-serif;
@@ -2177,7 +2180,7 @@ footer{
     color: #FFBE50;
 }
 .btn1:hover svg{
-    fill: #001D47;
+    fill: #FFBE50;
     transition: 0.2s all ease-in-out;
 }
 li::marker {
