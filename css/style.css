@@ -321,7 +321,7 @@ header {
     background-size: 100%;
     background-color: #001e47de;
     z-index: 9;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
 .postercontainer::after {
     content: '';
@@ -342,8 +342,6 @@ header {
     width: 100%;
     max-width: 9999px;
     margin: auto;
-    max-height: 450px;
-    object-position: bottom;
     z-index: 0;
     object-fit: cover;
 }
