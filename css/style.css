@@ -156,7 +156,7 @@ header {
     cursor: pointer;
     align-items: center;
 }
-.callw{
+.callnow{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -168,7 +168,7 @@ header {
     border-radius: 72px;
     width: 180px;
 }
-.callw a{
+.callnow a{
     color: inherit;
     display: flex;
     font-size: 14px;
@@ -176,11 +176,12 @@ header {
     gap: 9px;
     line-height: 100%;
     align-items: center; 
+    text-decoration: none;
 }
-.callw a svg{
+.callnow a svg{
     fill: #fff;
 }
-.btn-toggle, .imgbarm{display: none;}
+.btn-toggle, .imgbarm, .callm{display: none;}
 @media screen and (max-width:1000px) {
   .box{
     width: fit-content;
@@ -246,14 +247,14 @@ header {
   .menu-links{
   flex-direction: column;
   align-items:center;
-  margin-top: 40px;
+  margin-top: 70px;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
   background-color: #001D47;
-  height:250px
+  height:180px
   }
   .menu-links ul{
       display: block;
@@ -308,7 +309,16 @@ header {
     width: 70px;
     z-index: 99;
   }
-  .imgbarw{
+  .callm{
+    display: flex;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 160px;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+  }
+  .imgbarw, .callw{
     display: none;
   }
 }
@@ -782,6 +792,7 @@ header {
     background-color: #fff;
     color: #002A68;
     bottom:0;
+    z-index: 999;
 }
 .request a{
     display: block;
@@ -1451,7 +1462,7 @@ header {
 .preferencegrid{
     display: flex;
     flex-direction: column;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
 }
 .preferencecard{
     padding-bottom: 34px;
@@ -2184,4 +2195,7 @@ footer{
 }
 li::marker {
     color: #FFBE50;
-  }
+}
+p{
+  color: inherit;
+}
